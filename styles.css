@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.topLine {
+    background-color: #60267F;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.topLineSpan {
+    text-decoration: underline;
+}
+
+.headerContainer
+ {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px 15px 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.068) ;
+}
+.headerUl {
+    display:flex;
+    gap: 20px;
+}
+.navigationContainer { 
+    gap: 20px;
+}
+.headerList {
+    list-style: none;
+    
+}
+.headerList a {
+    text-decoration: none;
+    color: #2B0236;
+}
+.headerBtn {
+    padding: 5px 8px;
+    background: none;
+    border: 2px solid #9A54BC;
+    border-radius: 5px;
+    color: #9A54BC;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.headerBtn:hover {
+    background-color: #9A54BC;
+    color: #fff;
+    cursor: pointer;
+}
+
+.section1 {
+    margin-top:100px;
+}
+
+.headingContainer {
+    text-align: center;
+    gap: 50px;
+}
+
+.heading {
+    font-size: 3rem;
+    color: #2B0236;
+}
+.headingBtn {
+    padding: 20px 32px;
+    background-color: #9A54BC;
+    color: #fff;
+    border: 1px solid #9A54BC;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.2s easy-in-out;
+    cursor:pointer;
+}
+.headingBtn:hover {
+    background-color: #fff;
+    color: #9A54BC;
+
+}
+.firstPhoneContainer {
+    height: 500px;
+}
+.relative {
+    position:relative;
+    top: 0;
+}
+.absolute {
+    position:absolute;
+}
+.smallElipse {
+    top:65px;
+}
+.rectangle {
+    top:80px;
+}
+.collabWord{
+    top:175px;
+}
+.elipseBtn {
+    top: 363px;
+    width: 147px;
+    padding: 4px 14px;
+    color: #60267F;
+    border: 2px solid #9A54BC;
+    border-radius:5px;
+    background-color:#fff;
+    font-weight:500;
+}
