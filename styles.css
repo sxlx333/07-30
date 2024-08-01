@@ -14,6 +14,11 @@
     align-items: center;
     flex-direction: column;
 }
+.headerTwo {
+    font-size: 3rem;
+    color: #000;
+}
+
 .topLine {
     background-color: #60267F;
     text-align: center;
@@ -121,4 +126,51 @@
     border-radius:5px;
     background-color:#fff;
     font-weight:500;
+}
+.topBrandsContainer {
+    gap: 50px;
+
+}
+.iconsContainer {
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.iconsContainer img {
+    width: 100px;
+}
+.collabAppHelpContainer {
+    margin-top: 100px;
+    gap: 75px;
+}
+
+.mainContainer{
+    justify-content: space-between;
+}
+.leftParaContainer {
+    width: 60%;
+}
+.buttonContainer {
+    display: flex;
+    width: 100%;
+    background-color: #9A54BC;
+    ;
+    border-radius: 5px;
+    padding: 2px 2px;
+    gap: 5px;
+    -webkit-box-shadow: 0px 11px 10px -14px #000000; 
+box-shadow: 0px 11px 10px -14px #000000;
+
+}
+.buttonContainer button{
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #9A54BC;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.buttonContainer button:hover {
+    border: 2px solid #9A54BC;
+    background-color: #60267F;
+    color: white;
 }
