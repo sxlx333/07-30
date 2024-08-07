@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --white: #fff;
+    --brand-green: #00856F;
+    --purple: #60267F;
+
+}
+
+.fontRoboto{
+    font-family: "Roboto", sans-serif;
+}
 .flex {
     display: flex;
     justify-content: center;
@@ -20,7 +30,7 @@
 }
 
 .topLine {
-    background-color: #60267F;
+    background-color: var(--purple);
     text-align: center;
     color: #fff;
     font-size: 12px;
@@ -121,7 +131,7 @@
     top: 363px;
     width: 147px;
     padding: 4px 14px;
-    color: #60267F;
+    color: var(--purple);
     border: 2px solid #9A54BC;
     border-radius:5px;
     background-color:#fff;
@@ -137,7 +147,9 @@
 }
 
 .iconsContainer img {
-    width: 100px;
+    width:215px;
+    height: 159px;
+
 }
 .collabAppHelpContainer {
     margin-top: 100px;
@@ -171,6 +183,137 @@ box-shadow: 0px 11px 10px -14px #000000;
 }
 .buttonContainer button:hover {
     border: 2px solid #9A54BC;
-    background-color: #60267F;
+    background-color: var(--purple);
     color: white;
+}
+.paraContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+.paraContainer p {
+    background-color: #f2f2f2;
+    padding: 1rem;
+}
+.paraContainer p span {
+    font-weight: 700;
+}
+
+.RightImgContainer {
+    width: 55%;
+    padding-top:70px;
+}
+
+.RightImgContainer img {
+    width: 300px;
+}
+.budgetContainer {
+    margin-top: 100px;
+    gap: 30px;
+}
+.budgetContainer p {
+    font-size: 24px;
+    text-align: center;
+}
+.projectsDoneContainer {
+    margin-top: 100px;
+    gap:50px;
+}
+.projectDoneCardsContainer {
+    width: 80%;
+    justify-content: space-evenly;
+}
+.card {
+    align-items: flex-start;
+    gap:20px;
+}
+.card > span {
+    margin-left: 20px;
+}
+.card img {
+    width: 300px;
+}
+.projectDoneCardHeader{
+    color: var(--purple);
+    font-weight: 500;
+}
+.projectDoneCardNumber {
+    font-weight: 700;
+}
+
+.bigCardsContainer {
+    gap: 20px;
+    margin-top:200px;
+}
+.bigCardsTopPara {
+    color: #A79D9D;
+    font-size: 12px;
+}
+.monthlyYearlyContainer {
+    gap: 10px;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+.montly {
+    color: #A79D9D;
+}
+.yearly {
+    font-weight: 500;
+}
+.discount {
+    background-color: #FFE87A;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 3px;
+}
+.threeBigCardContainer {
+    margin-top:25px;
+    gap: 50px;
+
+}
+.bigCard {
+    width: 300px;
+    height: 500px;
+    border: 0.5px solid #AAAAAA;
+    padding: 20px 30px;
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.bigCard p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.bigCard button {
+    padding: 15px 20px;
+    background-color: var(--white);
+    border: 2px solid #2B0236;
+    font-weight: 700;
+}
+.bigCard button:hover {
+    background-color: var(--purple);
+    color: var(--white);
+    transition: 0.2s ease-in-out;
+}
+.bigCardListContainer {
+    gap: 15px;
+    align-items: flex-start;
+}
+.bigCardListContainer li {
+    padding: 0 0 0 10px;
+    font-size: 10px;
+}
+
+.bigCardListContainer li::marker {
+    content: "▶";
+}
+.cardThree {
+    background-color: #56E6A5;
+}
+.cardThree p {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: normal;
+    font-size: 18px;
 }

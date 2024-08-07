@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--FONTS FROM GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+
+
 </head>
 <body>
     <header>
@@ -44,7 +52,7 @@
 
         <p class="pavadinimas"></p>
     </header>
-    <main>
+    <main class="fontRoboto">
         <section class="section1 flexColumn">
             <div class="headingContainer flexColumn">
                 <h1 class="heading">Easy solution for builders and contractors <br>
@@ -78,16 +86,85 @@
                     <button class="supervisorBtn">Site-Supervisor app</button>
                 </div>
                 <div class="paraContainer">
-                    <p class="collabPara"><span>Work/Material request:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio expedita, similique fugiat repellat dolorum ratione excepturi numquam dolor doloremque perspiciatis?</p>
-                    <p class="collabPara"><span>Project Management:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio expedita, similique fugiat repellat dolorum ratione excepturi numquam dolor doloremque perspiciatis?</p>
-                    <p class="collabPara"><span>Payment:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio expedita, similique fugiat repellat dolorum ratione excepturi numquam dolor doloremque perspiciatis?</p>
-                    <p class="collabPara"><span>Tutorials:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio expedita, similique fugiat repellat dolorum ratione excepturi numquam dolor doloremque perspiciatis?</p>
+                    <p class="collabPara"><span>Work/Material request:</span> Whenever a client wants to start a work, request notifications with date and time for materials and artisians will be promted through their app.</p>
+                    <p class="collabPara"><span>Project Management:</span> Work on multiple projects...<span>see more</span></p>
+                    <p class="collabPara"><span>Payment:</span> Get paid for the step by step work...<span>see more</span></p>
+                    <p class="collabPara"><span>Tutorials:</span> Explore the video tutorials to learn... <span>see more</span></p>
                 </div>
             </div>
-            <div class="RightImgContainer">
+            <div class="RightImgContainer flex">
                 <img src="./img/Rectangle.svg" alt="phoneLogo">
             </div>
         </div>
+        </section>
+        <section class="budgetContainer flexColumn">
+            <h2 class="headerTwo">Fastest, Safest & Budget friendly</h2>
+            <p>Managing your projects on spreadsheet or messaging app is a time-taking and inefficient way.They can't link various <br> project data effectively at once place , thus you won't be able to avoid project cost escalation effectively .</p>
+                <iframe width="1252" height="613" src="https://www.youtube.com/embed/xyYxg2n8fQs?si=xw5bsNPEmtDLNz_T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section class="projectsDoneContainer flexColumn">
+            <h2 class="headerTwo">Projects done on Collab</h2>
+            <div class="projectDoneCardsContainer flex">
+                <div class="card flexColumn">
+                    <img src="./img/projectsDone/Rectangle 35.svg" alt="project">
+                    <span class="projectDoneCardHeader">Builders</span>
+                    <span class="projectDoneCardNumber">100+</span>
+                </div>
+                <div class="card flexColumn">
+                    <img src="./img/projectsDone/Rectangle 34.svg" alt="project">
+                    <span class="projectDoneCardHeader">Contractors</span>
+                    <span class="projectDoneCardNumber">50+</span>
+                </div>
+                <div class="card flexColumn">
+                    <img src="./img/projectsDone/Rectangle 21.svg" alt="project">
+                    <span class="projectDoneCardHeader">Design Build Firm</span>
+                    <span class="projectDoneCardNumber">30+</span>
+                </div>
+            </div>
+        </section>
+        <section class="bigCardsContainer flexColumn">
+            <h2 class="headerTwo">Ready to start with Collab apps?</h2>
+            <p class="bigCardsTopPara">Choose the package that suits you.</p>
+
+            <div class="monthlyYearlyContainer flex">
+                <span class="montly">Monthly</span>
+                <img src="./img/greenButton.png" alt="">
+                <span class="yearly">Yearly</span>
+                <span class="discount">10% discount</span>
+            </div>
+
+            <div class="threeBigCardContainer flex">
+                <div class="cardOne bigCard">
+                    <p>Basic</p>
+                    <h2 class="headerTwo">Rs.5000</h2>
+                    <button>Request Demo</button>
+                    <ul class="bigCardListContainer flexColumn">
+                        <li>Create BoQ</li>
+                        <li>Release Purchase Orders</li>
+                        <li>Cash flow analysis</li>
+                    </ul>
+                </div>
+                <div class="cardTwo bigCard">
+                    <p>Essential</p>
+                    <h2 class="headerTwo">Rs.5000</h2>
+                    <button>Request Demo</button>
+                    <ul class="bigCardListContainer flexColumn">
+                        <li>Create BoQ</li>
+                        <li>Release Purchase Orders</li>
+                        <li>Cash flow analysis</li>
+                        <li>Vendor App</li>
+                        <li>Site Engineer App</li>
+                        <li>Client App</li>
+                    </ul>
+                </div>
+                <div class="cardThree bigCard">
+                    <p>Enterprise</p>
+                    <h2 class="headerTwo">Contact <br> sales<br> team</h2>
+                    <button>Request Demo</button>
+                    <p>Unlock the full power to work effectively. Click “Request Demo” now.</p>
+                </div>
+            </div>
+
         </section>
     </main>
 </body>
