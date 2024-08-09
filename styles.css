@@ -317,3 +317,123 @@ box-shadow: 0px 11px 10px -14px #000000;
     font-weight: normal;
     font-size: 18px;
 }
+.starContainer {
+    margin-top: 100px;
+    gap: 50px;
+}
+.starsImg {
+    gap: 16px;
+}
+
+.starsImg img {
+    width: 30px;
+}
+
+.starsPara {
+    width: 85%;
+    gap: 83px;
+}
+
+.starsPara p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 30px 63px;
+    text-align: center;
+}
+.starsPara img {
+    width: 235px;
+}
+.starVeidukasirPara {
+    gap: 10px;
+}
+.starVeidukasirPara img {
+    width: 70px;
+}
+.joinUsContainer {
+    margin-top: 193px;
+    gap: 50px;
+}
+.joinUsPara {
+    font-size:18px;
+    font-weight:400;
+    text-align: center;
+}
+.exploreOpp {
+    padding: 12px 15px;
+    color: var(--white);
+    border: 2px solid #fff;
+    border-radius:5px;
+    background-color:#9A54BC;
+    font-weight:400;
+
+}
+.MiniParaYou {
+    color: #9A54BC;
+    position: absolute;
+    top: 5378px;
+    left: 1191px;
+} 
+.JoinUsCrazyDiv {
+    width: 90%;
+}
+.ntrk{
+    width: 100px;
+}
+.JoinUsCrazyDiv img:nth-of-type(1) {
+    position: absolute;
+    top: 5261px;
+    left: 109px;
+    z-index: 1;
+}
+.JoinUsCrazyDiv img:nth-of-type(2) {
+    position: absolute;
+    top: 5464px;
+    left: 276px;
+    z-index: 1;  
+}
+.JoinUsCrazyDiv img:nth-of-type(3) {
+    position: absolute;
+    top: 5420px;
+    left: 460px;
+    z-index: 1;
+}
+.JoinUsCrazyDiv img:nth-of-type(4) {
+    position: absolute;
+    top: 5490px;
+    left: 601px;
+    z-index: 1; 
+}
+.JoinUsCrazyDiv img:nth-of-type(5) {
+    position: absolute;
+    top: 5533px;
+    left: 802px;
+    z-index: 1;
+}
+.JoinUsCrazyDiv img:nth-of-type(6) {
+    position: absolute;
+    top: 5493px;
+    left: 1005px;
+    z-index: 1;
+}  
+.JoinUsCrazyDiv img:nth-of-type(7) {
+    position: absolute;
+    top: 5523px;
+    left: 1216px;
+    z-index: 1;
+}
+.JoinUsCrazyDiv img:nth-of-type(8) {
+    position: absolute;
+    top: 5404px;
+    left: 1304px;
+    z-index: 1;
+}
+.longLine {
+    position: absolute;
+    top: 5300px;
+    width: 80%;
+    z-index: 0;
+}
+.downloadCollabContainer {
+    margin-top: 400px;
+}
