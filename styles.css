@@ -436,4 +436,42 @@ box-shadow: 0px 11px 10px -14px #000000;
 }
 .downloadCollabContainer {
     margin-top: 400px;
+    gap: 30px;
+    background-color: #9A54BC;
+    padding: 100px 100px;
+}
+.headerBig {
+    color:#fff;
+    font-size:55px;
+}
+.threeButtonSection {
+    gap: 50px;
+}
+.threeButtonSection button {
+    padding: 12px 15px;
+    color: var(--white);
+    border: 3px solid #fff;
+    border-radius:5px;
+    background-color:#9A54BC;
+    font-weight:500;
+}
+.threeButtonSection button:hover {
+    color: #9A54BC;
+    background-color: #fff;
+}
+.mapQuestionContainer {
+    gap:70px;
+}
+.questionLeftContainer {
+    gap:20px;
+}
+.questionLeftContainer h2 {
+    margin-bottom: 40px;
+}
+.questionLeftContainer span {
+    font-weight: 500;
+    font-size:20px;
+}
+.mapRightContainer {
+    width:50%;
 }
