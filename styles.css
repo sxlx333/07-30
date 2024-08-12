@@ -361,6 +361,9 @@ box-shadow: 0px 11px 10px -14px #000000;
     font-weight:400;
     text-align: center;
 }
+.JoinUsCrazyDiv {
+    width: 90%;
+}
 .exploreOpp {
     padding: 12px 15px;
     color: var(--white);
@@ -370,77 +373,69 @@ box-shadow: 0px 11px 10px -14px #000000;
     font-weight:400;
     font-size: 26px;
 }
-.MiniParaYou {
-    color: #9A54BC;
-    position: absolute;
-    top: 5582px;
-    left: 1405px;
-    font-size: 25px;
-} 
-.JoinUsCrazyDiv {
-    width: 90%;
+
+.longLineDiv {
+    position: relative;
+    display: inline-block;
+}
+.longLine {
+    margin: auto;
+    display: block;
+    width: 1080px;
+    height: auto;
 }
 .ntrk{
     width: 120px;
-}
-.JoinUsCrazyDiv img:nth-of-type(1) {
+    height: auto;
+    display: block;
     position: absolute;
-    top: 5442px;
-    left: 229px;
-    z-index: 1;
 }
-.JoinUsCrazyDiv img:nth-of-type(2) {
+
+
+.MiniParaYou {
+    color: #9A54BC;
     position: absolute;
-    top: 5655px;
-    left: 362px;
-    z-index: 1;
+    left: 82%;
+    top: 23%;
+    font-size: 25px;
 }
-.JoinUsCrazyDiv img:nth-of-type(3) {
-    position: absolute;
-    top: 5626px;
-    left: 618px;
-    z-index: 1;
+.img1 {
+    left: -4%;
+    top: -20%;
 }
-.JoinUsCrazyDiv img:nth-of-type(4) {
-    position: absolute;
-    top: 5726px;
-    left: 787px;
-    z-index: 1;
+.img2 {
+    left: 8%;
+    top: 48%;
 }
-.JoinUsCrazyDiv img:nth-of-type(5) {
-    position: absolute;
-    top: 5730px;
-    left: 1019px;
-    z-index: 1;
+.img3 {
+    left: 25%;
+    top: 35%;
 }
-.JoinUsCrazyDiv img:nth-of-type(6) {
-    position: absolute;
-    top: 5695px;
-    left: 1228px;
-    z-index: 1;
+.img4 {
+    left: 38%;
+    top: 68%;
+}
+.img5 {
+    left: 53%;
+    top: 68%;
+}
+.img6 {
+    left: 69%;
+    top: 55%;
 }  
-.JoinUsCrazyDiv img:nth-of-type(7) {
-    position: absolute;
-    top: 5740px;
-    left: 1470px;
-    z-index: 1;
+.img7 {
+    left: 89%;
+    top: 61%;
 }
-.JoinUsCrazyDiv img:nth-of-type(8) {
-    position: absolute;
-    top: 5593px;
-    left: 1524px;
-    z-index: 1;
+.img8 {
+    left: 93%;
+    top: 23%;
 }
-.longLine {
-    position: absolute;
-    top: 5500px;
-    width: 70%;
-    z-index: 0;
-}
+
 .downloadCollabContainer {
-    margin-top: 400px;
+    margin-top: 300px;
     background-color: #9A54BC;
-    padding: 150px 150px;
+    padding: 150px;
 }
 .headerBig {
     color:#fff;
