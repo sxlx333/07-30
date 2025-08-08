@@ -8,6 +8,9 @@
   --brand-green: #00856f;
   --purple: #60267f;
 }
+main.fontRoboto {
+  margin-top: 3rem;
+}
 
 .fontRoboto {
   font-family: 'Roboto', sans-serif;
@@ -41,6 +44,10 @@
 
 .topLineSpan {
   text-decoration: underline;
+  cursor: pointer;
+}
+.link {
+  color: #fff;
 }
 
 .headerContainer {
@@ -64,6 +71,10 @@
   text-decoration: none;
   color: #2b0236;
 }
+.headerList a:hover {
+  text-decoration: none;
+  color: #af22d6;
+}
 .headerBtn {
   padding: 5px 8px;
   background: none;
@@ -78,10 +89,6 @@
   background-color: #9a54bc;
   color: #fff;
   cursor: pointer;
-}
-
-.section1 {
-  margin-top: 100px;
 }
 
 .headingContainer {
@@ -136,10 +143,11 @@
   background-color: #fff;
   font-weight: 500;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .elipseBtn:hover {
-  border: 2px solid #fff;
   background-color: #9a54bc;
+  color: #fff;
 }
 .topBrandsContainer {
   gap: 50px;
@@ -180,6 +188,7 @@
   border: 2px solid #9a54bc;
   background-color: transparent;
   border-radius: 5px;
+  cursor: pointer;
 }
 .buttonContainer button:hover {
   border: 2px solid #9a54bc;
@@ -290,11 +299,12 @@
   background-color: var(--white);
   border: 2px solid #2b0236;
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 .bigCard button:hover {
   background-color: var(--purple);
   color: var(--white);
-  transition: 0.2s ease-in-out;
 }
 .bigCardListContainer {
   gap: 15px;
@@ -342,10 +352,10 @@
 .starsPara img {
   width: 90px;
 }
-.starVeidukasirPara {
+.designationImageContainer {
   gap: 10px;
 }
-.starVeidukasirPara img {
+.designationImageContainer img {
   width: 90px;
 }
 .joinUsContainer {
@@ -368,6 +378,12 @@
   background-color: #9a54bc;
   font-weight: 400;
   font-size: 26px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.exploreOpp:hover {
+  color: var(--white);
+  background-color: #774292;
 }
 
 .longLineDiv {
@@ -431,6 +447,7 @@
   margin-top: 300px;
   background-color: #9a54bc;
   padding: 150px;
+  gap: 2rem;
 }
 .headerBig {
   color: #fff;
@@ -447,6 +464,8 @@
   background-color: #9a54bc;
   font-weight: 500;
   font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 .threeButtonSection button:hover {
   color: #9a54bc;
@@ -497,7 +516,15 @@
 .followUsImages img {
   width: 60px;
 }
+.followUsImages img.linkedInIcon {
+  clip-path: inset(0 11% 0 0);
+}
 .collabDetailRightContainer {
+  gap: 3rem;
+  font-size: 25px;
+  align-items: start;
+}
+.collabDetailRightContainer .sectionOf3Columns {
   gap: 50px;
   align-items: self-start;
   margin-top: 145px;
@@ -506,25 +533,37 @@
 .aboutCompany,
 .aboutResources,
 .aboutLegal {
-  gap: 40px;
+  gap: 30px;
   align-items: flex-start;
-  font-size: 25px;
-}
-.marginas1 {
-  margin-top: 20px;
-}
-.marginas2 {
-  margin-top: 158px;
-}
-.marginas2 a {
-  text-decoration: none;
-  color: #60267f;
 }
 
-.collabDetailRightContainer p {
+.collabDetailRightContainer .sectionOf3Columns p {
   font-weight: 700;
   color: #000;
 }
+.collabDetailRightContainer .sectionOf3Columns span {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.collabDetailRightContainer .sectionOf3Columns span:hover {
+  color: #be49fd;
+}
+
+.collabDetailRightContainer .containerOf1Column {
+  font-weight: 700;
+  gap: 30px;
+}
+.collabDetailRightContainer .containerOf1Column span a {
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: #60267f;
+}
+.collabDetailRightContainer .containerOf1Column span a:hover {
+  color: #be49fd;
+}
+
 .allRightsReserved {
   margin-top: 100px;
   background-color: #60267f;
