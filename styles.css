@@ -33,7 +33,7 @@ main.fontRoboto {
   flex-direction: column;
 }
 .headerTwo {
-  font-size: clamp(0.8rem, 5vw, 2rem);
+  font-size: clamp(1.3rem, 5vw, 2rem);
   color: #000;
   text-align: center;
 }
@@ -104,7 +104,8 @@ main.fontRoboto {
 }
 
 .heading {
-  font-size: clamp(0.8rem, 5vw, 2rem);
+  font-size: clamp(1.3rem, 5vw, 2rem);
+  padding: 0 10px;
   color: #2b0236;
 }
 .headingBtn {
@@ -147,7 +148,7 @@ main.fontRoboto {
 .rectangle {
   top: 14%;
   left: 50%;
-  width: clamp(60px, 15vw, 150px);
+  width: clamp(60px, 21vw, 150px);
   transform: translateX(-50%);
 }
 .collabWord {
@@ -160,10 +161,10 @@ main.fontRoboto {
   top: 91%;
   left: 50%;
   transform: translateX(-50%);
-  width: clamp(158px, 20%, 200px);
+  width: clamp(129px, 20%, 200px);
   transform: translateX(-50%);
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  padding: clamp(10px, 0vw, 1em) clamp(20px, 1vw, 40px);
+  font-size: clamp(0.7rem, 1.5vw, 1.25rem);
+  padding: clamp(9px, 0vw, 1em) clamp(20px, 1vw, 40px);
   color: var(--purple);
   border: 2px solid #9a54bc;
   border-radius: 5px;
@@ -178,7 +179,7 @@ main.fontRoboto {
 }
 .topBrandsContainer {
   gap: 50px;
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 .iconsContainer {
   gap: 100px;
@@ -187,19 +188,20 @@ main.fontRoboto {
 }
 
 .iconsContainer img {
-  width: 215px;
-  height: 159px;
+  width: clamp(60px, 10vw, 215px);
+  height: auto;
 }
 .collabAppHelpContainer {
   margin-top: 100px;
 }
 
 .mainContainer {
-  gap: 50px;
   margin-top: 100px;
+  justify-content: space-around;
 }
 .leftParaContainer {
-  width: 60%;
+  padding: 10px;
+  width: 50%;
 }
 .buttonContainer {
   display: flex;
@@ -239,10 +241,6 @@ main.fontRoboto {
   font-weight: 700;
 }
 
-.RightImgContainer {
-  width: 55%;
-}
-
 .RightImgContainer img {
   width: 300px;
 }
@@ -251,8 +249,17 @@ main.fontRoboto {
   gap: 30px;
 }
 .budgetContainer p {
-  font-size: 24px;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   text-align: center;
+  padding: 0 10px;
+}
+.budgetContainer iframe {
+  display: block;
+  margin: 0 auto;
+  width: clamp(290px, 80vw, 1080px);
+  height: clamp(153px, 43vw, 600px);
+  padding: 0 10px;
+  border: none;
 }
 .projectsDoneContainer {
   margin-top: 100px;
@@ -270,7 +277,10 @@ main.fontRoboto {
   margin-left: 20px;
 }
 .card img {
-  width: 300px;
+  width: clamp(180px, 23vw, 300px);
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 .projectDoneCardHeader {
   color: var(--purple);
@@ -609,6 +619,12 @@ main.fontRoboto {
   font-size: 20px;
 }
 
+@media (min-width: 800px) {
+  .break {
+    display: block;
+  }
+}
+
 @media (max-width: 800px) {
   .headerContainer {
     padding: 10px;
@@ -629,11 +645,24 @@ main.fontRoboto {
   .mapRightContainer iframe {
     width: 300px;
   }
-  .iconsContainer,
+  .projectDoneCardsContainer {
+    width: 100%;
+    gap: 20px;
+  }
   .mainContainer,
   .projectDoneCardsContainer,
   .threeBigCardContainer,
   .collabBottomPageContainer {
     flex-direction: column;
+  }
+  .mainContainer {
+    margin-top: 25px;
+  }
+  .leftParaContainer {
+    width: 100%;
+    padding: 22px;
+  }
+  .card img {
+    width: calc(100vw - 150px);
   }
 }
