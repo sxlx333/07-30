@@ -135,25 +135,25 @@ main.fontRoboto {
 .bigElipse {
   top: 5%;
   left: 50%;
-  width: clamp(302px, 40vw, 512px);
+  width: clamp(250px, 90vw, 512px);
   transform: translateX(-50%);
 }
 .smallElipse {
   top: 5%;
   left: 50%;
-  width: clamp(120px, 35vw, 180px);
+  width: clamp(126px, 55vw, 394px);
   transform: translateX(-50%);
 }
 .rectangle {
   top: 14%;
   left: 50%;
-  width: clamp(60px, 15vw, 100px);
+  width: clamp(60px, 15vw, 150px);
   transform: translateX(-50%);
 }
 .collabWord {
   top: 39%;
   left: 50%;
-  width: clamp(50px, 12vw, 90px);
+  width: clamp(49px, 17vw, 90px);
   transform: translateX(-50%);
 }
 .elipseBtn {
@@ -522,8 +522,8 @@ main.fontRoboto {
   font-weight: 500;
   font-size: 23px;
 }
-.mapRightContainer {
-  width: 50%;
+.mapRightContainer iframe {
+  width: 100%;
 }
 .collabBottomPageContainer {
   margin-top: 88px;
