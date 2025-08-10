@@ -8,6 +8,9 @@
   --brand-green: #00856f;
   --purple: #60267f;
 }
+body {
+  overflow-x: hidden;
+}
 main.fontRoboto {
   margin-top: 3rem;
 }
@@ -30,8 +33,9 @@ main.fontRoboto {
   flex-direction: column;
 }
 .headerTwo {
-  font-size: 3rem;
+  font-size: clamp(0.8rem, 5vw, 2rem);
   color: #000;
+  text-align: center;
 }
 
 .topLine {
@@ -40,6 +44,9 @@ main.fontRoboto {
   color: #fff;
   font-size: 12px;
   padding: 10px 0;
+}
+.topLinePara {
+  font-size: clamp(10px, 2vw, 12px);
 }
 
 .topLineSpan {
@@ -61,7 +68,7 @@ main.fontRoboto {
   display: flex;
   gap: 20px;
 }
-.navigationContainer {
+.headerNav {
   gap: 20px;
 }
 .headerList {
@@ -97,7 +104,7 @@ main.fontRoboto {
 }
 
 .heading {
-  font-size: 3rem;
+  font-size: clamp(0.8rem, 5vw, 2rem);
   color: #2b0236;
 }
 .headingBtn {
@@ -115,28 +122,48 @@ main.fontRoboto {
   color: #9a54bc;
 }
 .firstPhoneContainer {
-  height: 500px;
+  height: min(70vw, 500px);
+  width: 100%;
+  max-width: 1200px;
 }
 .relative {
   position: relative;
-  top: 0;
 }
 .absolute {
   position: absolute;
 }
+.bigElipse {
+  top: 5%;
+  left: 50%;
+  width: clamp(302px, 40vw, 512px);
+  transform: translateX(-50%);
+}
 .smallElipse {
-  top: 65px;
+  top: 5%;
+  left: 50%;
+  width: clamp(120px, 35vw, 180px);
+  transform: translateX(-50%);
 }
 .rectangle {
-  top: 80px;
+  top: 14%;
+  left: 50%;
+  width: clamp(60px, 15vw, 100px);
+  transform: translateX(-50%);
 }
 .collabWord {
-  top: 175px;
+  top: 39%;
+  left: 50%;
+  width: clamp(50px, 12vw, 90px);
+  transform: translateX(-50%);
 }
 .elipseBtn {
-  top: 363px;
-  width: 147px;
-  padding: 4px 14px;
+  top: 91%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(158px, 20%, 200px);
+  transform: translateX(-50%);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  padding: clamp(10px, 0vw, 1em) clamp(20px, 1vw, 40px);
   color: var(--purple);
   border: 2px solid #9a54bc;
   border-radius: 5px;
@@ -151,10 +178,12 @@ main.fontRoboto {
 }
 .topBrandsContainer {
   gap: 50px;
+  margin-top: 4rem;
 }
 .iconsContainer {
   gap: 100px;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .iconsContainer img {
@@ -163,11 +192,11 @@ main.fontRoboto {
 }
 .collabAppHelpContainer {
   margin-top: 100px;
-  gap: 75px;
 }
 
 .mainContainer {
-  justify-content: space-between;
+  gap: 50px;
+  margin-top: 100px;
 }
 .leftParaContainer {
   width: 60%;
@@ -212,7 +241,6 @@ main.fontRoboto {
 
 .RightImgContainer {
   width: 55%;
-  padding-top: 70px;
 }
 
 .RightImgContainer img {
@@ -350,7 +378,16 @@ main.fontRoboto {
   text-align: center;
 }
 .starsPara img {
-  width: 90px;
+  width: 60px;
+}
+.arrow-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.arrow-btn:hover img {
+  background-color: #f3f3f3;
 }
 .designationImageContainer {
   gap: 10px;
@@ -572,16 +609,17 @@ main.fontRoboto {
   font-size: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .headerContainer {
     padding: 10px;
   }
-  .headerUl {
+  .headerNav {
     display: none;
   }
-  .heading {
-    font-size: 1rem;
+  .iconsContainer {
+    gap: 50px;
   }
+
   .mapQuestionContainer {
     flex-direction: column;
     align-items: center;
@@ -590,5 +628,12 @@ main.fontRoboto {
   }
   .mapRightContainer iframe {
     width: 300px;
+  }
+  .iconsContainer,
+  .mainContainer,
+  .projectDoneCardsContainer,
+  .threeBigCardContainer,
+  .collabBottomPageContainer {
+    flex-direction: column;
   }
 }

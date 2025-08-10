@@ -32,8 +32,8 @@
         <a href="#" class="link">
           <img src="./img/Collab.svg" alt="Collab website logo" />
         </a>
-        <div class="navigationContainer flex">
-          <nav class="headerNav">
+        <div>
+          <nav class="headerNav flex">
             <ul class="headerUl">
               <li class="headerList">
                 <a href="#">About</a>
@@ -54,14 +54,13 @@
                 <a href="#">Shop</a>
               </li>
             </ul>
+            <button class="headerBtn">Request Demo</button>
           </nav>
-
-          <button class="headerBtn">Request Demo</button>
         </div>
       </div>
     </header>
     <main class="fontRoboto">
-      <section class="section1 flexColumn">
+      <section class="flexColumn">
         <div class="headingContainer flexColumn">
           <h1 class="heading">
             Easy solution for builders and contractors <br />
@@ -69,7 +68,7 @@
           </h1>
           <button class="headingBtn">Request Demo</button>
         </div>
-        <div class="firstPhoneContainer relative flex">
+        <div class="firstPhoneContainer relative">
           <img
             class="absolute bigElipse"
             src="./img/Ellipse 2.svg"
@@ -157,19 +156,13 @@
       <section class="budgetContainer flexColumn">
         <h2 class="headerTwo">Fastest, Safest & Budget friendly</h2>
         <p>
-          Managing your projects on spreadsheet or messaging app is a
-          time-taking and inefficient way.They can't link various <br />
-          project data effectively at once place , thus you won't be able to
-          avoid project cost escalation effectively .
+          Managing your projects on spreadsheet or messaging app is inefficient.
+          They can't link various project data in one place, so you can't avoid
+          cost escalation effectively.
         </p>
         <iframe
-          width="1252"
-          height="613"
           src="https://www.youtube.com/embed/xyYxg2n8fQs?si=xw5bsNPEmtDLNz_T"
           title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
       </section>
@@ -252,7 +245,10 @@
           <img src="./img/stars/Star.svg" alt="star inactive" />
         </div>
         <div class="starsPara flex">
-          <img src="./img/stars/ArrowLeft.svg" alt="Arrow left" />
+          <button class="arrow-btn">
+            <img src="./img/stars/ArrowLeft.svg" alt="Arrow left" />
+          </button>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, nisl
             eget tristique molestie. Quisque pharetra<br />
@@ -263,7 +259,9 @@
             tortor. Id metus rutrum fringilla nibh neque, at bibendum. Diam
             libero morbi aliquet mi gravida velit enim.
           </p>
-          <img src="./img/stars/ArrowRight.svg" alt="Arrow right" />
+          <button class="arrow-btn">
+            <img src="./img/stars/ArrowRight.svg" alt="Arrow right" />
+          </button>
         </div>
         <div class="designationImageContainer flexColumn">
           <img src="./img/stars/Ellipse 24.svg" alt="Designation image" />
@@ -340,19 +338,15 @@
       </section>
       <section class="mapQuestionContainer flex">
         <div class="questionLeftContainer flexColumn">
-          <h2 class="headerTwo">Still have a question ?</h2>
+          <h2 class="headerTwo">Still have a question?</h2>
           <span>Phanikondru@gmail.com</span>
           <span>9676989240</span>
         </div>
         <div class="mapRightContainer">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18456.930381705362!2d25.2579674!3d54.6723813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd938398d25f97%3A0xf00d18d4c423eb0!2sVingio%20parkas!5e0!3m2!1slt!2slt!4v1723196567404!5m2!1slt!2slt"
-            width="1000"
-            height="550"
-            style="border: 0"
-            allowfullscreen=""
+            src="https://www.google.com/maps/embed?pb=..."
+            allowfullscreen
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </section>
