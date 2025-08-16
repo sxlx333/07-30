@@ -277,7 +277,7 @@ main.fontRoboto {
   margin-left: 20px;
 }
 .card img {
-  width: clamp(180px, 23vw, 300px);
+  width: clamp(200px, 24vw, 300px);
   height: auto;
   display: block;
   object-fit: cover;
@@ -320,8 +320,8 @@ main.fontRoboto {
   gap: 50px;
 }
 .bigCard {
-  width: 300px;
-  height: 500px;
+  width: calc(33.33% - 50px);
+  height: clamp(438px, 40vh, 500px);
   border: 0.5px solid #aaaaaa;
   padding: 20px 30px;
   display: flex;
@@ -373,28 +373,29 @@ main.fontRoboto {
 }
 
 .starsImg img {
-  width: 40px;
+  width: clamp(25px, 4vw, 40px);
 }
 
 .starsPara {
   width: 85%;
-  gap: 83px;
+  gap: clamp(10px, 4.5vw, 83px);
 }
 
-.starsPara p {
-  font-size: 20px;
+.arrowText {
+  font-size: clamp(12px, 1.5vw, 20px);
   font-weight: 500;
   line-height: 1.5rem;
   text-align: center;
 }
 .starsPara img {
-  width: 60px;
+  width: clamp(30px, 3vw, 50px);
 }
 .arrow-btn {
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
+  width: max-content;
 }
 .arrow-btn:hover img {
   background-color: #f3f3f3;
@@ -403,14 +404,14 @@ main.fontRoboto {
   gap: 10px;
 }
 .designationImageContainer img {
-  width: 90px;
+  width: clamp(90px, 8vw, 120px);
 }
 .joinUsContainer {
   margin-top: 252px;
   gap: 50px;
 }
 .joinUsPara {
-  font-size: 22px;
+  font-size: clamp(1.3rem, 5vw, 22px);
   font-weight: 400;
   text-align: center;
 }
@@ -436,18 +437,20 @@ main.fontRoboto {
 .longLineDiv {
   position: relative;
   display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 .longLine {
   margin: auto;
   display: block;
-  width: 1080px;
-  height: auto;
+  width: clamp(300px, 80vw, 1080px);
 }
-.ntrk {
-  width: 120px;
+.imageElement {
+  width: 11%;
   height: auto;
   display: block;
   position: absolute;
+  aspect-ratio: 1/1;
 }
 
 .MiniParaYou {
@@ -491,26 +494,26 @@ main.fontRoboto {
 }
 
 .downloadCollabContainer {
-  margin-top: 300px;
+  margin-top: 200px;
   background-color: #9a54bc;
-  padding: 150px;
+  padding: clamp(20px, 9vw, 150px);
   gap: 2rem;
 }
 .headerBig {
   color: #fff;
-  font-size: 73px;
+  font-size: clamp(2rem, 5vw, 73px);
 }
 .threeButtonSection {
   gap: 36px;
 }
 .threeButtonSection button {
-  padding: 20px 62px;
+  padding: clamp(10px, 1.5vw, 20px) clamp(10px, 1.5vw, 62px);
   color: var(--white);
   border: 3px solid #fff;
   border-radius: 5px;
   background-color: #9a54bc;
   font-weight: 500;
-  font-size: 20px;
+  font-size: clamp(0.8rem, 1.5vw, 20px);
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
@@ -533,27 +536,30 @@ main.fontRoboto {
   font-size: 23px;
 }
 .mapRightContainer iframe {
-  width: 100%;
+  width: clamp(290px, 50vw, 1080px);
+  height: clamp(153px, 43vw, 515px);
 }
 .collabBottomPageContainer {
   margin-top: 88px;
-  gap: 250px;
+  align-items: baseline;
+  gap: 5%;
 }
 .collabFollowLeftContainer {
   gap: 25px;
   align-items: start;
+  padding: 0 clamp(10px, 5vw, 50px);
 }
 .collabBottomHeader {
   color: #9a54bc;
-  font-size: 60px;
+  font-size: clamp(1.3rem, 5vw, 4rem);
 }
 .collabFollowLeftContainer p {
-  font-size: 30px;
+  font-size: clamp(1.3rem, 5vw, 1.7rem);
   color: #2c2c2c;
   line-height: 1.8rem;
 }
 .collabFollowLeftContainer span {
-  font-size: 30px;
+  font-size: clamp(1.3rem, 5vw, 2rem);
   font-weight: 500;
   margin-top: 20px;
 }
@@ -561,20 +567,20 @@ main.fontRoboto {
   gap: 30px;
 }
 .followUsImages img {
-  width: 60px;
+  width: clamp(43px, 3vw, 50px);
 }
 .followUsImages img.linkedInIcon {
   clip-path: inset(0 11% 0 0);
 }
 .collabDetailRightContainer {
   gap: 3rem;
-  font-size: 25px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
   align-items: start;
+  padding: 0 clamp(10px, 5vw, 50px);
 }
 .collabDetailRightContainer .sectionOf3Columns {
-  gap: 50px;
+  gap: clamp(1px, 4vw, 50px);
   align-items: self-start;
-  margin-top: 145px;
   color: #60267f;
 }
 .aboutCompany,
@@ -618,32 +624,97 @@ main.fontRoboto {
   color: var(--white);
   font-size: 20px;
 }
+.allRightsReserved p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
 
 @media (min-width: 800px) {
   .break {
     display: block;
   }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 1466px) {
+  div.starsPara.flex p br {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .joinUsPara {
+    width: 80%;
+  }
+  .joinUsPara br {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
+  .break {
+    display: none;
+  }
+  br {
+    display: none;
+  }
   .headerContainer {
     padding: 10px;
   }
   .headerNav {
-    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60%;
+    height: 100vh;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
   }
-  .iconsContainer {
-    gap: 50px;
+  .hamburger {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    padding: 10px;
+    z-index: 9999;
   }
-
+  .hamburger:hover {
+    background-color: #eeeeee;
+  }
+  body.no-scroll {
+    overflow: hidden;
+  }
+  nav.active {
+    transform: translateX(0);
+  }
+  .headerNav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerNav ul li {
+    padding: 10px;
+    text-align: center;
+  }
+  .headerNav ul li a {
+    font-size: 2rem;
+  }
+  .headerNav button {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
   .mapQuestionContainer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
-  }
-  .mapRightContainer iframe {
-    width: 300px;
   }
   .projectDoneCardsContainer {
     width: 100%;
@@ -652,8 +723,12 @@ main.fontRoboto {
   .mainContainer,
   .projectDoneCardsContainer,
   .threeBigCardContainer,
-  .collabBottomPageContainer {
+  .collabBottomPageContainer,
+  .threeButtonSection {
     flex-direction: column;
+  }
+  .threeButtonSection {
+    align-items: stretch;
   }
   .mainContainer {
     margin-top: 25px;
@@ -663,6 +738,44 @@ main.fontRoboto {
     padding: 22px;
   }
   .card img {
-    width: calc(100vw - 150px);
+    width: clamp(100px, 100vw - 50px, 300px);
+  }
+  .bigCardsContainer {
+    margin-top: 70px;
+  }
+  .bigCard {
+    width: clamp(100px, 100vw - 50px, 400px);
+    height: clamp(386px, 40vh, 500px);
+  }
+  .starContainer {
+    margin-top: 100px;
+  }
+  .starsPara {
+    padding: 0 5px;
+    width: 100%;
+  }
+  .joinUsContainer {
+    margin-top: 100px;
+  }
+  .exploreOpp {
+    padding: 8px 10px;
+    font-size: 24px;
+  }
+  .mapQuestionContainer {
+    gap: 50px;
+  }
+  .mapRightContainer iframe {
+    width: clamp(290px, 90vw, 1080px);
+  }
+  .collabDetailRightContainer {
+    margin-top: 50px;
+  }
+  @media (max-width: 600px) {
+    .longLineDiv {
+      display: none;
+    }
+    .downloadCollabContainer {
+      margin-top: 150px;
+    }
   }
 }
