@@ -8,6 +8,7 @@
   --brand-green: #00856f;
   --purple: #60267f;
 }
+html,
 body {
   overflow-x: hidden;
 }
